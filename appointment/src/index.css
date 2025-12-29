@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply Outfit font globally */
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Show underline when active */
+.active hr {
+  @apply block;
+}
+
+/* Hide scrollbars */
+::-webkit-scrollbar {
+  @apply hidden;
+}
+
+/* Optional: smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ✅ Background and text for light and dark mode */
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Light mode styles (default) */
+html:not(.dark),
+body:not(.dark) {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode styles */
+html.dark,
+body.dark {
+  background-color: #0E0F24;
+  color: white;
+}
