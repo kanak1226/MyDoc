@@ -1,8 +1,8 @@
 import jwt from 'jsonwebtoken';
 
-const adminEmail = "admin@example.com"; // Replace with actual admin email
-const adminPassword = "admin123";       // Replace with actual admin password
-const JWT_SECRET = "kanakdeora";
+const adminEmail = ""; // Replace with actual admin email
+const adminPassword = "";       // Replace with actual admin password
+const JWT_SECRET = process.env.JWT_SECRET;
 
 const authAdmin = async (req, res, next) => {
     try {

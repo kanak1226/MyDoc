@@ -14,7 +14,7 @@ import authRoutes from './routes/auth.js'  // ✅ Google Auth route
 
 // App config
 const app = express()
-const port = process.env.PORT || 4001
+const port = process.env.PORT 
 
 
 connectDB()

@@ -4,6 +4,6 @@ import mongoose from "mongoose"
 const connectDB = async()=>{
 
     mongoose.connection.on('connected', () => console.log("Database Connected"))
-    await mongoose.connect('mongodb+srv://746asmisharma:asmikanak@cluster0.cg1rw.mongodb.net/')
+    await mongoose.connect (process.env.mongoose.connect)
 }
 export default connectDB

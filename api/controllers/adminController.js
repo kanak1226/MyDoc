@@ -78,9 +78,9 @@ const addDoctor = async (req, res) => {
 const loginAdmin = async (req, res) => {
     try {
         const { email, password } = req.body;
-        const adminEmail = "admin@example.com"; 
-        const adminPassword = "admin123";
-        const JWT_SECRET = "kanakdeora";
+        const adminEmail = ""; 
+        const adminPassword = "";
+        const JWT_SECRET = process.env.JWT_SECRET;
 
         if (email === adminEmail && password === adminPassword) {
             const token = jwt.sign({ email, password }, JWT_SECRET, { expiresIn: "90h" });

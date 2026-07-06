@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 
-const JWT_SECRET = "kanakdeora";
+const JWT_SECRET = process.env.JWT_SECRET;
 
 const authDoctor = async (req, res, next) => {
     // Get the token from Authorization header

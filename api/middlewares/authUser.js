@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
 
 // user authentication middleware
-const JWT_SECRET='kanakdeora'
+const JWT_SECRET=process.env.JWT_SECRET
 const authUser = async (req, res, next) => {
     const { token } = req.headers
     if (!token) {
