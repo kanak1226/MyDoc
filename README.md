@@ -59,7 +59,7 @@ MyDoc is a full-stack Doctor Appointment Booking System developed using the MERN
 ```
 Hospital/
 │
-├── admin/
+├── admi/
 ├── api/
 ├── appointment/
 ├── package.json
@@ -74,7 +74,7 @@ Hospital/
 ### Clone Repository
 
 ```bash
-git clone https://github.com/AsmiSharma1408/MyDoc.git
+git clone https://github.com/kanak1226/MyDoc.git
 ```
 
 ### Navigate to the Project Directory
