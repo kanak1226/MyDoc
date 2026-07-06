@@ -10,12 +10,13 @@ import stripe from 'stripe';
 import {v2 as cloudinary} from 'cloudinary'
 // Load environment variables
 dotenv.config();
-const RAZORPAY_KEY_ID=" pk_test_51R6TrkAWU8fEuECB8WlnWJXyMCmBqRGaOvhRNCq5bhqAxFneIPbSHa69QNuS2PpUoio8jsvtoLN3qZnY4L1jhpLq00nyW4WpYa,"
-const RAZORPAY_KEY_SECRET="sk_test_51R6TrkAWU8fEuECBH0yHvQQbn0F4CSd6rZToVLHl4VmYgjW5oIKM09evOThQIBvfeqwiqERLcVCKfwmbqIK3PB0500pLL1LqTz,"
-const JWT_SECRET = process.env.JWT_SECRET || 'kanakdeora'; 
+const RAZORPAY_KEY_ID=process.env.RAZORPAY_KEY_ID
+
+const RAZORPAY_KEY_SECRET=process.env.RAZORPAY_KEY_SECRET
+const JWT_SECRET = process.env.JWT_SECRET ; 
 const razorpayInstance = new razorpay({
-    key_id: "pk_test_51R6TrkAWU8fEuECB8WlnWJXyMCmBqRGaOvhRNCq5bhqAxFneIPbSHa69QNuS2PpUoio8jsvtoLN3qZnY4L1jhpLq00nyW4WpYa",
-    key_secret: "sk_test_51R6TrkAWU8fEuECBH0yHvQQbn0F4CSd6rZToVLHl4VmYgjW5oIKM09evOThQIBvfeqwiqERLcVCKfwmbqIK3PB0500pLL1LqTz",
+    key_id: process.env.key_id,
+    key_secret: process.env.key_secret,
 })
 const CURRENCY ="INR"
 // ✅ Register User
