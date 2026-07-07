@@ -1,5 +1,5 @@
 # 🏥 MyDoc - Doctor Appointment Booking System
-
+    
 MyDoc is a full-stack Doctor Appointment Booking System developed using the MERN Stack. It allows patients to book appointments with doctors, while doctors and administrators can efficiently manage appointments, profiles, and system data.
 
 ---
